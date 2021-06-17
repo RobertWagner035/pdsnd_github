@@ -8,7 +8,8 @@ Robert's bikeshare project
 
 ### Description
 The project created a python file, that deals with bikeshare data from three different cities in the US: Chicago, New York City and Washington.
-Starting the python code in the terminal leads to an interaction with the user, who can decide what data he wants to see, depending on city, month and weekday.
+Starting the python code in the terminal leads to an interaction with the user, who can first decide if he wants to see some raw data.
+After checking the raw data, the user can ask the program to see statistical data, depending on city, month and weekday.
 Depending on the input by the user, the code calculates and shows different statistics on bikesharing.   
 
 ### Files used
