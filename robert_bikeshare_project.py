@@ -25,7 +25,7 @@ def get_filters():
     while raw_data != 'yes' and raw_data != 'no':
         raw_data = input('\nPlease insert only yes or no:\n').lower()
 
-    #if user inserts "yes", 5 lines of raw data are shown. inserting "no" leads directly to line 38
+    #if user inserts "yes", 20 lines of raw data are shown. inserting "no" leads directly to line 38
     i=0
     while raw_data == 'yes':
         i += 1
@@ -225,19 +225,19 @@ def main():
         user_stats(df, city, month, day)
 
         # ask for raw data again
-        raw_data = input('Would you like to see 5 lines of raw data? Please insert yes or no:\n').lower()
+        raw_data = input('Would you like to see 20 lines of raw data? Please insert yes or no:\n').lower()
         #check if user inserts an invalid value
         while raw_data != 'yes' and raw_data != 'no':
             raw_data = input('\nPlease insert yes or no:\n').lower()
 
-        #if user inserts yes, 5 lines of raw data are shown, now from the filtered city
+        #if user inserts yes, 20 lines of raw data are shown, now from the filtered city
         i=0
         while raw_data == 'yes':
             i += 1
-            print(df.head(i*5))
-            raw_data = input('\nWould you like to see 5 more lines of raw data from the filtered dataset? Please insert yes or no:\n')
+            print(df.head(i*20))
+            raw_data = input('\nWould you like to see 20 more lines of raw data from the filtered dataset? Please insert yes or no:\n')
             while raw_data != 'yes' and raw_data != 'no':
-                raw_data = input('\nPlease insert yes or no. Would you like to see 5 more lines of raw data from the filtered dataset?\n').lower()
+                raw_data = input('\nPlease insert yes or no. Would you like to see 20 more lines of raw data from the filtered dataset?\n').lower()
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
