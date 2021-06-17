@@ -19,8 +19,8 @@ def get_filters():
     """
     print('\nHello! Let\'s explore some US bikeshare data!')
 
-    # get user input for 5 lines of raw data and 5 more lines any time, the user wants to see more raw data
-    raw_data = input('\nWould you like to see 5 lines of raw data? Please insert yes or no:\n').lower()
+    # get user input for 20 lines of raw data and 20 more lines any time, the user wants to see more raw data
+    raw_data = input('\nWould you like to see 20 lines of raw data? Please insert yes or no:\n').lower()
     #check if user inserts an invalid value
     while raw_data != 'yes' and raw_data != 'no':
         raw_data = input('\nPlease insert only yes or no:\n').lower()
@@ -30,7 +30,7 @@ def get_filters():
     while raw_data == 'yes':
         i += 1
         raw = pd.read_csv('./chicago.csv')
-        print(raw.head(i*5))
+        print(raw.head(i*20))
         raw_data = input('\nWould you like to see 5 more lines of raw data? Please insert yes or no:\n')
         while raw_data != 'yes' and raw_data != 'no':
             raw_data = input('\nPlease insert yes or no. Would you like to see 5 more lines of raw data?\n').lower()
