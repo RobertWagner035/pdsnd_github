@@ -35,7 +35,7 @@ def get_filters():
         while raw_data != 'yes' and raw_data != 'no':
             raw_data = input('\nPlease insert yes or no. Would you like to see 5 more lines of raw data?\n').lower()
 
-    # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+    # get user input for city (chicago, new york city, washington).
     city = input('\nThank you! Which city do you now want to see statistics from: Chicago, Washington or New York? \nPlease insert the city:\n').lower()
     #check if user inserts an invalid value
     while city != 'chicago' and city != 'new york' and city != 'washington':
